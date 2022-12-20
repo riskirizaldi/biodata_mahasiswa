@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<p>{{hoby}}</p>
+<table class="table container table-secondary table-striped table-bordered">
+    <thead>
+      <tr class="table-success">
+        <th scope="col">No.Absen</th>
+        <th scope="col">Nama Lengkap</th>
+        <th scope="col">Alamat</th>
+        <th scope="col">Tanggal Lahir</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for mahasiswa in mahasiswas %}
+      <tr>
+        <th scope="row">{{ mahasiswa.id }}</th>
+        <td>{{ mahasiswa.name }}</td>
+        <td>{{ mahasiswa.alamat }}</td>
+        <td>{{ mahasiswa.tanggal_lahir }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock  %}
+
+

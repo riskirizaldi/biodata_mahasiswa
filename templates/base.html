@@ -1,0 +1,119 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" >
+  </head>
+  <body>
+    <!-- NAvbar  -->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar w/ text</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Data Mahasiswa Teknik Informatika
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir navbar -->
+        {% block content %}
+        {% endblock %}
+      <!-- footer -->
+      <footer class="bg-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div>
+                <h3>Logo</h3>
+                <p class="mb-30 footer-desc">Bismillah Berproses</p>
+              </div>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+              <div class="">
+                <h4>Tautan Cepat</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Service</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4>Melayani</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Branding</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Graphics Design</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4>Alamat</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <p>+6283131133537</p>
+                  </li>
+                  <li>
+                    <p><a href="#">RISKIRIZALDI77@gmail.com</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>Pamekasan
+                      City in Pamekasan State
+                      Jl.Raya Waru, Telangi II, West Waru, Waru Pamekasan, East Java, Indonesia</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+      
+            <div class="copyright">
+              <p>Developed and maintained by <a href="#" target="_blank">Riskirizaldi</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- EndFooter -->
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'js/jquery.js'%}"></script>
+  </body>
+</html>
